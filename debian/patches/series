@@ -1,0 +1,7 @@
+Makefile-No_Strip.patch
+fix-spelling-errors.patch
+Makefile-no-flags
+fix_cross-compilation.patch
+fix_release_numbering.patch
+0001-Counter64-bugfix-by-Hirofumi-Kosaka-kosaka-rworks.jp.patch
+0002-Bugfix-by-in-braa_EncodeShortBitstringOid-32-bit-num.patch
