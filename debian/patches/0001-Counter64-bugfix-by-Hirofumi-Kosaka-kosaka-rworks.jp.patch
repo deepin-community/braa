@@ -1,0 +1,24 @@
+From: Hirofumi Kosaka <kosaka@rworks.jp>
+Description: Bugfix Counter64
+origin: https://github.com/mteg/braa/commit/bb3c8996234d4362a91318b31ab2a406e2a2d6ab
+
+--- a/braaasn.c
++++ b/braaasn.c
+@@ -585,7 +585,7 @@
+ 			fprintf(stderr, "%s=> String: '%s'\n", indent, (char*) obj->pdata);
+ 			break;
+ 		case BRAAASN_COUNTER64:
+-			fprintf(stderr, "%s=> Counter64: '%Ld'\n", indent, *((u_int64_t*) obj->pdata));
++			fprintf(stderr, "%s=> Counter64: '%llu'\n", indent, *((u_int64_t*) obj->pdata));
+ 			break;
+ 		case BRAAASN_IPADDR:
+ 			{
+@@ -643,7 +643,7 @@
+ 			snprintf(buffer, size, "(null object)");
+ 			break;
+ 		case BRAAASN_COUNTER64:
+-			snprintf(buffer, size, "%Ld", *((u_int64_t*) obj->pdata));
++			snprintf(buffer, size, "%llu", *((u_int64_t*) obj->pdata));
+ 			break;
+ 		case BRAAASN_INTEGER:
+ 		case BRAAASN_GAUGE:

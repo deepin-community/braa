@@ -1,5 +1,92 @@
-template-repository (1.0-1) unstable; urgency=medium
+braa (0.82-7) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Marcos Fouces ]
+  * Improve manual page code.
+  * Update d/copyright file.
+
+ -- Marcos Fouces <marcos@debian.org>  Sat, 03 Dec 2022 15:07:04 +0100
+
+braa (0.82-6) unstable; urgency=medium
+
+  * Bump watch file standard to 4.
+  * Improve man page.
+  * Bump to Standards-Version 4.5.1 (no changes required).
+  * Update copyright date.
+
+ -- Marcos Fouces <marcos@debian.org>  Sat, 13 Feb 2021 00:53:13 +0100
+
+braa (0.82-5) unstable; urgency=medium
+
+  * d/control
+    - Bump debhelper compatibility level to 13
+    - Switch Build-Depends from debhelper to debhelper-compat, dropping
+      d/compat as it is obsolete.
+    - Bump to standards-version 4.3.0 (no changes required).
+    - Set Rules-Requires-Root: no in source stanza.
+  * d/pathes: cherry-pick bug-fixing upstream commits.
+    -  Add 0001-Counter64-bugfix-by-Hirofumi-Kosaka-kosaka-rworks.jp.patch
+    -  Add 0002-Bugfix-by-in-braa_EncodeShortBitstringOid-32-bit-num.patch
+  * d/upstream/metadata: improve data.
+  * Update uploader email to @debian.org.
+
+ -- Marcos Fouces <marcos@debian.org>  Sun, 04 Oct 2020 23:34:19 +0200
+
+braa (0.82-4) unstable; urgency=medium
+
+  * Fix cross compilation. Thanks to Helmut Grohn. (Closes: #916367).
+  * Fix release numbering. (Closes: #898263).
+  * Update uploader email address.
+  * Add upstream metadata.
+  * Update copyright years.
+
+ -- Marcos Fouces <marcos.fouces@gmail.com>  Sun, 24 Feb 2019 00:45:17 +0000
+
+braa (0.82-3) unstable; urgency=medium
+
+  * Team upload.
+  * Update team maintainer address to Debian Security Tools
+    <team+pkg-security@tracker.debian.org>
+  * Update Vcs-Git and Vcs-Browser for the move to salsa.debian.org
+  * Bump Standards-Version to 4.2.1
+  * Switch to debhelper compat level 11
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Mon, 03 Sep 2018 21:41:41 +0200
+
+braa (0.82-2) unstable; urgency=medium
+
+  * Initial Debian release
+  * Write a simple man page
+  * Update to debhelper 9
+  * Bump standards-version to 3.9.8
+  * Add hardening compilation options.
+  * Fix minor spelling typos.
+  * Fix Makefile.
+
+ -- Marcos Fouces <mfouces@yahoo.es>  Thu, 25 Aug 2016 08:33:28 +0200
+
+braa (0.82-1kali3) kali; urgency=low
+
+  * Added watch file (Closes: 0000854)
+
+ -- Devon Kearns <dookie@kali.org>  Tue, 07 Jan 2014 14:02:39 -0700
+
+braa (0.82-1kali2) kali; urgency=low
+
+  * Removed desktop files
+
+ -- Mati Aharoni <muts@kali.org>  Fri, 14 Dec 2012 19:46:35 -0500
+
+braa (0.82-1kali1) kali; urgency=low
+
+  * Kali Version
+
+ -- Devon Kearns <dookie@kali.org>  Tue, 06 Nov 2012 12:47:46 -0700
+
+braa (0.82-1) kali; urgency=low
 
   * Initial release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Devon Kearns <dookie@kali.org>  Tue, 06 Nov 2012 11:47:21 -0700

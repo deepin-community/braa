@@ -1,0 +1,16 @@
+Description: Fix cross compilation. Avoid hardcoding "cc" compiler but use $(CC) variable.
+Author: Helmut Grohne <helmut@subdivi.de>
+---
+This patch header follows DEP-3: https://dep.debian.net/deps/dep3/
+
+--- a/Makefile
++++ b/Makefile
+@@ -24,7 +24,7 @@
+ LIBS = 
+ 
+ all: ${OBJECTS}
+-	cc $(OBJECTS) -o $(OUT) $(LDFLAGS) $(LIBS)
++	$(CC) $(OBJECTS) -o $(OUT) $(LDFLAGS) $(LIBS)
+ #	strip $(OUT)
+ 
+ clean:

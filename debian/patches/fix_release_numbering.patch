@@ -1,0 +1,17 @@
+Description: Display the correct release number in the "braa -h" output.
+Author: Marcos Fouces <marcos@debian.org>
+
+---
+This patch header follows DEP-3: https://dep.debian.net/deps/dep3/
+
+--- a/braa.c
++++ b/braa.c
+@@ -21,7 +21,7 @@
+ 
+ void help(void)
+ {
+-	printf("braa 0.81 - Mateusz 'mteg' Golicz <mtg@elsat.net.pl>, 2003 - 2006\n");
++	printf("braa 0.82 - Mateusz 'mteg' Golicz <mtg@elsat.net.pl>, 2003 - 2006\n");
+ 	printf("usage: braa [options] [query1] [query2] ...\n");
+ 	printf("  -h        Show this help.\n");
+ 	printf("  -2        Claim to be a SNMP2C agent.\n");
